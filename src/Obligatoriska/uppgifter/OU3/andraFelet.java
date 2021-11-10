@@ -1,6 +1,6 @@
 package Obligatoriska.uppgifter.OU3;
 
-public class NonLoop {
+public class andraFelet {
     public static void main(String[] args) {
         int[] iList = new int[19];
         iList[0] = 2;
@@ -63,9 +63,9 @@ public class NonLoop {
             // spårutskrift 2 -för att avsluta loopen i förväg// (för att kunna se vad som händer i början)
             // if (antalVarv++ == 10)
             //  System.exit (0);
-            }
-            // sekvens[0] är det enda återstående tänkbara elementet
-            // -det är det minsta elementet
+        }
+        // sekvens[0] är det enda återstående tänkbara elementet
+        // -det är det minsta elementet
         return sekvens[0];
     }
 }
