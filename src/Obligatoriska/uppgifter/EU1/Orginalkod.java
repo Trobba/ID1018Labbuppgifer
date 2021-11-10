@@ -1,17 +1,6 @@
-package Obligatoriska.uppgifter.OU3;
+package Obligatoriska.uppgifter.EU1;
 
 public class Orginalkod {
-    public static void main(String[] args) {
-        int[] iList = new int[6];
-        iList[0] = 2;
-        iList[1] = -5;
-        iList[2] = 1;
-        iList[3] = 5;
-        iList[4] = 8;
-        iList[5] = 4;
-        int minimumInt = min(iList);
-        System.out.println(minimumInt);
-    }
     public static int min (int[] element) throws IllegalArgumentException {
         if (element.length == 0)throw new IllegalArgumentException ("tom samling");
         // hör ihop med spårutskriften 2:

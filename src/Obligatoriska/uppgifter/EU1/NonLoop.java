@@ -1,27 +1,9 @@
-package Obligatoriska.uppgifter.OU3;
+package Obligatoriska.uppgifter.EU1;
 
-public class andraFelet {
+public class NonLoop {
     public static void main(String[] args) {
-        int[] iList = new int[19];
-        iList[0] = 2;
-        iList[1] = -5;
-        iList[2] = 1;
-        iList[3] = 5;
-        iList[4] = 8;
-        iList[5] = 4;
-        iList[6] = 2;
-        iList[7] = -5;
-        iList[8] = 1;
-        iList[9] = 5;
-        iList[10] = 8;
-        iList[11] = 4;
-        iList[12] = 2;
-        iList[13] = -5;
-        iList[14] = 1;
-        iList[15] = 5;
-        iList[16] = 5;
-        iList[17] = -10;
-        iList[18] = 5;
+        int[] iList = {2,3,62,89,1,2,16,34,5,2,10,5,3,2,0,18};
+
 
         int minimumInt = min(iList);
         System.out.println(minimumInt);
@@ -43,8 +25,7 @@ public class andraFelet {
             j = 0;
             while (j < antaletPar) {
                 // Tar minsta värdet av sekvens [i] och sekvens[i+1]
-                //delsekvens[j++] = (sekvens[i] < sekvens[i + 1]) ? sekvens[i] : sekvens[i + 1];
-                delsekvens[j++] = Math.min(sekvens[i], sekvens[i + 1]);
+                delsekvens[j++] = (sekvens[i] < sekvens[i + 1]) ? sekvens[i] : sekvens[i + 1];
                 i += 2;
             }
             if (antaletOparadeElement == 1)
@@ -63,9 +44,9 @@ public class andraFelet {
             // spårutskrift 2 -för att avsluta loopen i förväg// (för att kunna se vad som händer i början)
             // if (antalVarv++ == 10)
             //  System.exit (0);
-        }
-        // sekvens[0] är det enda återstående tänkbara elementet
-        // -det är det minsta elementet
+            }
+            // sekvens[0] är det enda återstående tänkbara elementet
+            // -det är det minsta elementet
         return sekvens[0];
     }
 }
